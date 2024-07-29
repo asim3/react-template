@@ -14,4 +14,4 @@ RUN npm run build
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
-CMD [ "npm run start -- -p 80" ]
+CMD [ "npm run dev" ]
