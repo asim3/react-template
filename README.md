@@ -3,9 +3,9 @@
 
 ## create react app
 ```bash
-docker image build -t delete-me/create-react-app:latest delete-me
+docker image build -t init/create-react-app:latest init
 
-docker run --rm -it -v '.:/home/node/react-app' delete-me/create-react-app:latest
+docker run --rm -it -v '.:/home/node/react-app' init/create-react-app:latest
 ```
 
 
