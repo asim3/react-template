@@ -4,14 +4,14 @@ RUN apt install bash
 
 ENV APP_HOME=/home/node/app
 
-COPY --chown=d_user --chmod=550  ./app $APP_HOME
+COPY --chown=node --chmod=550  ./app $APP_HOME
 
 USER node
 
+WORKDIR $APP_HOME
 
+RUN npm run build
 
-FROM nginx:mainline-alpine3.17-slim AS main
+ENTRYPOINT [ "/bin/bash", "-c" ]
 
-RUN adduser -S -s /bin/bash -u 1000 -D d_user
-
-COPY --from=build --chown=d_user --chmod=500  /home/d_dir /usr/share/nginx/html
+CMD [ "npm run start -- -p 80" ]
