@@ -14,4 +14,4 @@ FROM nginx:mainline-alpine3.17-slim AS main
 
 RUN adduser -S -s /bin/bash -u 1000 -D d_user
 
-COPY --from=build --chown=d_user --chmod=500  /home/d_dir /usr/share/nginx/html
+# COPY --from=build --chown=d_user --chmod=500  /home/d_dir /usr/share/nginx/html
