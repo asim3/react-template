@@ -8,4 +8,4 @@ WORKDIR /home/node/react-app
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
-CMD [ "npx create-next-app@latest app && rm -rf ./delete-me" ]
+CMD [ "npx create-next-app@14.2 app && rm -rf ./delete-me" ]
