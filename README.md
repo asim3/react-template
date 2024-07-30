@@ -13,3 +13,13 @@ docker run --rm -it -v '.:/home/node/react-app' init/create-react-app:latest
 ```bash
 docker compose up --build --force-recreate
 ```
+
+
+## Next Config
+`next.config.mjs`
+```js
+const nextConfig = {
+    output: "standalone"
+};
+```
+> `npm install sharp` !!
