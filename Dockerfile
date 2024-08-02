@@ -6,4 +6,4 @@ USER node
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
-CMD [ "cd /home/node/app && npm run dev" ]
+CMD [ "cd /home/node/app && npx expo start" ]
