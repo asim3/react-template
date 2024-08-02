@@ -8,4 +8,4 @@ WORKDIR /home/node/react-app
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
-CMD [ "npx create-expo-app app --template blank && rm -rf ./init" ]
+CMD [ "npx create-expo-app@3.0 app --template blank && rm -rf ./init" ]
