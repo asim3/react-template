@@ -4,6 +4,8 @@ RUN apt install bash
 
 USER node
 
+WORKDIR /home/node/app
+
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
-CMD [ "cd /home/node/app && npx expo start" ]
+CMD [ "npm run web -- -p 3000" ]
