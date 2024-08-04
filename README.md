@@ -1,7 +1,7 @@
-# React App Template
+# React Native Template
 
 
-## create react app
+## Create React Native
 ```bash
 docker image build -t init/create-react-app:latest init
 
@@ -9,20 +9,10 @@ docker run --rm -it -v '.:/home/node/react-app' init/create-react-app:latest
 ```
 
 
-## run react app
+## Run React Native
 ```bash
 docker compose up --build --force-recreate
 
 # EXEC
 docker compose exec app /bin/bash 
 ```
-
-
-## Next Config
-`next.config.mjs`
-```js
-const nextConfig = {
-    output: "standalone"
-};
-```
-> `npm install sharp` !!
