@@ -8,8 +8,8 @@ WORKDIR /home/node/react-app
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
-CMD [ "npx create-expo-app@3.0 app --template blank \
-  && cd ./app \
+CMD [ "npx create-expo-app@3.0 src --template blank \
+  && cd ./src \
   && npx expo install \
     react-dom \
     react-native-web \

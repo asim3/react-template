@@ -2,9 +2,9 @@ FROM node:20.16-bullseye-slim AS build
 
 RUN apt install bash
 
-ENV APP_HOME=/home/node/app
+ENV APP_HOME=/home/node/src
 
-COPY --chown=node --chmod=550  ./app $APP_HOME
+COPY --chown=node --chmod=550  ./src $APP_HOME
 
 USER node
 
