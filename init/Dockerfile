@@ -8,9 +8,9 @@ WORKDIR /home/node/react-app
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
-CMD [ "npx create-expo-app@3.0 src --template blank \
+CMD [ "npx --yes create-expo-app@3.0 src --template blank \
   && cd ./src \
-  && npx expo install \
+  && npx --yes expo install \
     react-dom \
     react-native-web \
     @expo/metro-runtime \
@@ -20,6 +20,9 @@ CMD [ "npx create-expo-app@3.0 src --template blank \
     expo-linking \
     expo-constants \
     expo-status-bar \
+    @react-navigation/drawer \
+    react-native-gesture-handler \
+    react-native-reanimated \
   && rm -rf ../init" ]
 
 # https://docs.expo.dev/router/installation/
