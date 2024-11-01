@@ -19,3 +19,10 @@ docker compose exec app /bin/bash
 # fresh start
 docker compose down --remove-orphans --volumes
 ```
+
+
+### !!! Run `npm audit` for details.
+```
+npm audit fix --force
+
+```
