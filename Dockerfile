@@ -1,6 +1,4 @@
-FROM node:20.16-bullseye-slim AS build
-
-RUN apt install bash
+FROM node:lts-bookworm AS main
 
 USER node
 

@@ -1,8 +1,6 @@
-FROM node:20.16-bullseye-slim AS build
+FROM node:lts-bookworm AS create-expo
 
-RUN apt install bash
-
-USER 1000
+USER node
 
 WORKDIR /home/node/react-app
 

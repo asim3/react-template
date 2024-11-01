@@ -14,5 +14,8 @@ docker run --rm -it -v '.:/home/node/react-app' init/create-react-app:latest
 docker compose up --build --force-recreate
 
 # EXEC
-docker compose exec app /bin/bash 
+docker compose exec app /bin/bash
+
+# fresh start
+docker compose down --remove-orphans --volumes
 ```
