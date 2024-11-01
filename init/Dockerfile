@@ -1,14 +1,12 @@
-FROM node:20.16-bullseye-slim AS build
+FROM node:lts-bookworm AS create-expo
 
-RUN apt install bash
-
-USER 1000
+USER node
 
 WORKDIR /home/node/react-app
 
 ENTRYPOINT [ "/bin/bash", "-c" ]
 
-CMD [ "npx --yes create-expo-app@3.0 src --template blank \
+CMD [ "npx --yes create-expo-app@3.0 src --template expo-template-tabs \
   && cd ./src \
   && npx --yes expo install \
     react-dom \
