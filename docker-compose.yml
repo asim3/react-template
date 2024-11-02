@@ -1,9 +1,24 @@
-version: "3.8"
-
 services:
+  npm-install:
+    image: node:lts-bookworm
+    user: "1000:1000"
+    environment:
+      TZ: Asia/Riyadh
+    entrypoint:
+      - "/bin/sh"
+      - "-c"
+      - "cd /home/node/src && npm install"
+    volumes:
+      - "./src:/home/node/src"
+
+
   app:
     build:
       context: .
+    user: "1000:1000"
+    depends_on:
+      npm-install:
+        condition: service_completed_successfully
     ports:
       - "3000:3000"
     volumes:
