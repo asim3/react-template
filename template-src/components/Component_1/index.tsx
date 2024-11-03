@@ -4,10 +4,17 @@ import { View, Text, Button } from 'react-native';
 import { Link } from 'expo-router';
 
 
-const Component = () => {
+type ComponentProps = {
+  title: string,
+  paragraph?: string // the paragraph is optional
+}
+
+
+const Component = ({ title, paragraph='My default paragraph' }: ComponentProps) => {
   return (
     <View style={styles.container}>
-      <Text>Component_1</Text>
+      <Text>Component_1: { title }</Text>
+      <Text>{ paragraph }</Text>
     </View>
   );
 };

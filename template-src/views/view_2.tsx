@@ -8,7 +8,7 @@ export default function View_2() {
     <View>
       <Text>View_2 Page</Text>
 
-      <Component_1 />
+      <Component_1 title='view 2 title' />
       <Component_2 />
       <Component_3 />
       <Component_4 />
