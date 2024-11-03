@@ -8,7 +8,7 @@ export default function Component() {
   return (
     <View style={styles.scroll_view}>
       <Link href={'/modal'} asChild>
-        <Button title='Component 2' />
+        <Button title='Component 5' />
       </Link>
     </View>
   );
