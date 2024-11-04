@@ -5,7 +5,9 @@ import { Link } from 'expo-router';
 
 
 export default function Component() {
-  const [MyCount, setMyCount] = useState(99);
+  const [MyCount, setMyCount] = useState(33);
+
+  console.log("Component 3.MyCount =", MyCount) // will run if MyCount changes
 
   return (
     <View style={styles.scroll_view}>
