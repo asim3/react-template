@@ -15,7 +15,16 @@ docker compose up --build --force-recreate
 
 # EXEC
 docker compose exec app /bin/bash
+```
 
-# fresh start
+
+## install new package
+```bash
+docker compose exec app npx --yes expo install tamagui
+```
+
+
+## fresh start
+```bash
 docker compose down --remove-orphans --volumes
 ```
