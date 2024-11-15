@@ -1,7 +1,14 @@
-import React from 'react';
-import { View_3 } from '@/views'
+import { View, Text } from 'react-native';
+import { Component_3 } from '@/components'
 
 
-export default function Page() {
-  return <View_3 />;
+export default function Screen() {
+  return (
+    <View>
+      <Text style={{ textAlign: 'center', fontSize: 27 }}>Screen 3</Text>
+
+      <Component_3 />
+
+    </View>
+  );
 };
