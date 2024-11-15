@@ -17,12 +17,6 @@ CMD [ "npx --yes create-expo-app@3.0 src --template expo-template-tabs \
     react-native-screens \
     i18next \
     react-i18next \
-    react-dom \
-    react-native-web \
-    react-native-reanimated \
-    react-native-gesture-handler \
-    @expo/metro-runtime \
-    @react-navigation/drawer \
   && rm -rf ../init" ]
 
 # https://docs.expo.dev/router/installation/
